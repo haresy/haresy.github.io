@@ -1,13 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Trophy, Heart, Mail, Phone, Globe, MapPin } from "lucide-react";
+import {getVersion} from "@/lib/utils.ts";
 
 const Footer = () => {
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
-          
+
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
@@ -19,12 +20,12 @@ const Footer = () => {
                 <Badge variant="outline">Freestyle Wrestling Champion</Badge>
               </div>
             </div>
-            
+
             <p className="text-muted-foreground max-w-md">
-              Iranian freestyle wrestler seeking opportunities with professional wrestling clubs in England. 
+              Iranian freestyle wrestler seeking opportunities with professional wrestling clubs in England.
               Dedicated to representing England in international competitions and achieving Olympic success.
             </p>
-            
+
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Heart className="h-4 w-4 text-secondary" />
               <span>Proudly pursuing Olympic dreams for England</span>
@@ -81,19 +82,19 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground">
-                © 2024 Younes Haresabadi. All rights reserved.
+                © 2025 Younes Haresabadi. All rights reserved.
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                Professional Freestyle Wrestler | Tehran, Iran
+                Professional Freestyle Wrestler | Tehran, Iran. version: {getVersion()}
               </p>
             </div>
-            
+
             <div className="flex gap-3">
               <Button variant="outline" size="sm">
                 Download Resume
               </Button>
-              <Button 
-                variant="champion" 
+              <Button
+                variant="champion"
                 size="sm"
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
