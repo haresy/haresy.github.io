@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, Play, Medal, Target } from "lucide-react";
+import { Play, Medal, Target } from "lucide-react";
+import { DownloadResume } from "@/components/DownloadResume.tsx";
 import wrestlerHero from "@/assets/Younes-Haresabadi-Overview_athletic.jpg";
 
 const HeroSection = () => {
@@ -39,10 +40,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button variant="champion" size="lg" className="group">
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                Download Resume
-              </Button>
+              <DownloadResume variant="champion" size="lg" className="group" />
               <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
                 <Play className="mr-2 h-5 w-5" />
                 Watch Highlights

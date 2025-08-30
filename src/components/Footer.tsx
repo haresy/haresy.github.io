@@ -1,7 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Trophy, Heart, Mail, Phone, Globe, MapPin } from "lucide-react";
-import {getVersion} from "@/lib/utils.ts";
+import { getVersion } from "@/lib/utils.ts";
+import { DownloadResume } from "@/components/DownloadResume.tsx";
 
 const Footer = () => {
   return (
@@ -90,9 +91,7 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3">
-              <Button variant="outline" size="sm">
-                Download Resume
-              </Button>
+              <DownloadResume hideIcon />
               <Button
                 variant="champion"
                 size="sm"

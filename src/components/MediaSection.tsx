@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Download, Image, FileText, Youtube, Camera } from "lucide-react";
+import { Play, Image, FileText, Youtube, Camera } from "lucide-react";
+import { DownloadResume } from "@/components/DownloadResume.tsx";
 
 const MediaSection = () => {
   // Placeholder data for YouTube videos
@@ -13,7 +14,7 @@ const MediaSection = () => {
       embedId: "dQw4w9WgXcQ" // Placeholder YouTube ID
     },
     {
-      title: "Training Session with Grandmaster Mohsen Kaveh", 
+      title: "Training Session with Grandmaster Mohsen Kaveh",
       description: "Advanced techniques training at Tofigh Jahanbakht Wrestling Hall",
       thumbnail: "https://via.placeholder.com/400x225/ef4444/ffffff?text=Training+Session",
       embedId: "dQw4w9WgXcQ" // Placeholder YouTube ID
@@ -34,7 +35,7 @@ const MediaSection = () => {
     },
     {
       title: "Training at DIHIM Club",
-      description: "Early training days with Coach Morteza Afzali", 
+      description: "Early training days with Coach Morteza Afzali",
       thumbnail: "https://via.placeholder.com/300x200/06b6d4/ffffff?text=Training+Club"
     },
     {
@@ -55,7 +56,7 @@ const MediaSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Wrestling Media & Downloads</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch my wrestling highlights, download my complete resume, and view championship photos
+            Watch my wrestling highlights, download my complete resume, and view championship photos on my website
           </p>
         </div>
 
@@ -70,14 +71,11 @@ const MediaSection = () => {
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-muted-foreground">
-                Download my comprehensive wrestling resume including all achievements, 
+                Download my comprehensive wrestling resume including all achievements,
                 training history, and professional references.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="champion" size="lg">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download PDF Resume
-                </Button>
+                <DownloadResume label="Download PDF Resume" variant="champion" size="lg" />
                 <Button variant="outline" size="lg">
                   <FileText className="mr-2 h-5 w-5" />
                   View Online Resume

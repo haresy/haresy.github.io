@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Trophy, Mail, Download } from "lucide-react";
+import { DownloadResume } from "@/components/DownloadResume.tsx";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +39,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          
+
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="gradient-medal w-10 h-10 rounded-full flex items-center justify-center">
@@ -65,10 +66,7 @@ const Navigation = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <DownloadResume label="Resume" hideIcon />
             <Button variant="champion" size="sm" onClick={() => scrollToSection('#contact')}>
               <Mail className="mr-2 h-4 w-4" />
               Contact
@@ -98,10 +96,7 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" size="sm" className="w-full">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Resume
-                </Button>
+                <DownloadResume />
                 <Button variant="champion" size="sm" className="w-full" onClick={() => scrollToSection('#contact')}>
                   <Mail className="mr-2 h-4 w-4" />
                   Contact Me
