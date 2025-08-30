@@ -1,8 +1,12 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Medal, Award, Calendar } from "lucide-react";
 import medalsCollection from "@/assets/medals-collection.jpg";
-import certificatePlaceholder from "@/assets/certificate-placeholder.jpg";
+import img2022TehranCityChampionship from "@/assets/2022_1st-Place_Tehran-City-Championship.jpg";
+import img2022TehranLeagueDivision1 from "@/assets/2022_1st-Place_Tehran-League-Division-1.jpg";
+import img2023TehranProvinceChampionship from "@/assets/2023_3rd-Place_Tehran-Province-Championship.jpg";
+import img2023TehranCityChampionship from "@/assets/2023_1st-Place_Tehran-City-Championship.jpg";
+import img2024NationalTournament from "@/assets/2024_3rd-Place_National-Tournament.jpg";
 
 const AchievementsSection = () => {
   const achievements = [
@@ -11,35 +15,35 @@ const AchievementsSection = () => {
       title: "1st Place - Tehran City Championship",
       location: "Tehran",
       medal: "Gold",
-      image: certificatePlaceholder
+      image: img2022TehranCityChampionship
     },
     {
-      year: "2022", 
+      year: "2022",
       title: "1st Place - Tehran League Division 1",
       location: "Tehran",
       medal: "Gold",
-      image: certificatePlaceholder
+      image: img2022TehranLeagueDivision1
     },
     {
       year: "2023",
-      title: "3rd Place - Tehran Province Championship", 
+      title: "3rd Place - Tehran Province Championship",
       location: "Tehran",
       medal: "Bronze",
-      image: certificatePlaceholder
+      image: img2023TehranProvinceChampionship
     },
     {
       year: "2023",
       title: "1st Place - Tehran City Championship",
-      location: "Tehran", 
+      location: "Tehran",
       medal: "Gold",
-      image: certificatePlaceholder
+      image: img2023TehranCityChampionship
     },
     {
       year: "2024",
       title: "3rd Place - National Tournament",
       location: "Tehran",
-      medal: "Bronze", 
-      image: certificatePlaceholder
+      medal: "Bronze",
+      image: img2024NationalTournament
     }
   ];
 
@@ -49,7 +53,7 @@ const AchievementsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Championships & Awards</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A proven track record of excellence in freestyle wrestling competitions 
+            A proven track record of excellence in freestyle wrestling competitions
             across Tehran and national level tournaments
           </p>
         </div>
@@ -79,7 +83,7 @@ const AchievementsSection = () => {
           {achievements.map((achievement, index) => (
             <Card key={index} className="shadow-champion hover:shadow-medal transition-all duration-300">
               <div className="grid md:grid-cols-4 gap-6 p-6">
-                
+
                 {/* Certificate Image */}
                 <div className="md:col-span-1">
                   <div className="relative overflow-hidden rounded-lg">
@@ -89,7 +93,7 @@ const AchievementsSection = () => {
                       className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-2 right-2">
-                      <Badge 
+                      <Badge
                         variant={achievement.medal === "Gold" ? "default" : "secondary"}
                         className={`${achievement.medal === "Gold" ? "gradient-medal" : "bg-orange-500"} text-white`}
                       >
@@ -118,7 +122,7 @@ const AchievementsSection = () => {
                       <p className="text-muted-foreground">{achievement.location}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-accent" />
                     <span className="font-semibold text-accent">{achievement.medal} Medal Winner</span>

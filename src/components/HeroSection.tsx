@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, Play, Medal, Target } from "lucide-react";
-import wrestlerHero from "@/assets/wrestler-hero.jpg";
+import wrestlerHero from "@/assets/Younes-Haresabadi-Overview_athletic.jpg";
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background with wrestling theme */}
       <div className="absolute inset-0 gradient-hero opacity-90"></div>
       <div className="absolute inset-0 bg-black/20"></div>
-      
+
       {/* Floating elements */}
       <div className="absolute top-20 left-10 text-accent/30 animate-pulse">
         <Medal size={40} />
@@ -17,10 +17,10 @@ const HeroSection = () => {
       <div className="absolute bottom-20 right-10 text-accent/30 animate-pulse delay-1000">
         <Target size={35} />
       </div>
-      
+
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Hero Content */}
           <div className="text-center lg:text-left space-y-8 fade-in-up">
             <div className="space-y-4">
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 Iranian Freestyle Wrestling Champion seeking opportunities with professional wrestling clubs in England
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Button variant="champion" size="lg" className="group">
                 <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 Watch Highlights
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent">5+</div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Hero Image */}
           <div className="relative flex justify-center fade-in-up delay-300">
             <div className="relative">
