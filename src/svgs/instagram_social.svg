@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="url(#instagramGradient)"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     class="mix-blend-multiply h-5 w-5">
+    <defs>
+        <linearGradient id="instagramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#cb09ec"/>
+            <stop offset="25%" stop-color="#ec2897"/>
+            <stop offset="50%" stop-color="#f94f4f"/>
+            <stop offset="75%" stop-color="#f9844a"/>
+            <stop offset="100%" stop-color="#fbe3a3"/>
+        </linearGradient>
+    </defs>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>

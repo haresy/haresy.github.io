@@ -1,6 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Calendar, Heart, Globe } from "lucide-react";
+import { Youtube, Linkedin } from "lucide-react";
+import XSocial from "@/svgs/x_social.svg";
+import InstagramSocial from "@/svgs/instagram_social.svg";
 
 const AboutSection = () => {
   return (
@@ -9,34 +12,60 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            An 18-year-old freestyle wrestler with 4+ years of training experience, 
+            An 18-year-old freestyle wrestler with 4+ years of training experience,
             passionate about representing England in international competitions
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Personal Story */}
-          <Card className="shadow-champion">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6 text-primary">My Wrestling Journey</h3>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Currently training under Grandmaster Mohsen Kaveh, I've dedicated myself to mastering 
-                  advanced wrestling techniques, strength conditioning, and tactical decision-making. 
-                  My journey began at DIHIM Wrestling Club where I learned fundamental techniques.
-                </p>
-                <p>
-                  I'm passionate about representing England and pursuing my Olympic dreams. My goal is 
-                  to join England's national team and win Olympic Gold in freestyle wrestling, bringing 
-                  pride to my fans and adopted country.
-                </p>
-                <div className="flex items-center gap-2 text-secondary">
-                  <Heart className="h-5 w-5" />
-                  <span className="font-semibold">Dream: Olympic Gold for England</span>
+          <div className="space-y-6">
+            <Card className="shadow-champion">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-6 text-primary">My Wrestling Journey</h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Currently training under Grandmaster Mohsen Kaveh, I've dedicated myself to mastering
+                    advanced wrestling techniques, strength conditioning, and tactical decision-making.
+                    My journey began at DIHIM Wrestling Club where I learned fundamental techniques.
+                  </p>
+                  <p>
+                    I'm passionate about representing England and pursuing my Olympic dreams. My goal is
+                    to join England's national team and win Olympic Gold in freestyle wrestling, bringing
+                    pride to my fans and adopted country.
+                  </p>
+                  <div className="flex items-center gap-2 text-secondary">
+                    <Heart className="h-5 w-5" />
+                    <span className="font-semibold">Dream: Olympic Gold for England</span>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-champion">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">Social Links</h3>
+                <div className="space-y-3">
+                  <a target='_blank' href="https://x.com/haresywrestler" className="flex items-center gap-3">
+                    <img src={XSocial} alt="" className="h-4 w-5" />
+                    <span>@HaresYWrestler</span>
+                  </a>
+                  <a target='_blank' href="https://www.youtube.com/@haresy.wrestler" className="flex items-center gap-3">
+                    <Youtube className="h-5 w-5 text-red-600" />
+                    <span>YT/HaresY.Wrestler</span>
+                  </a>
+                  <a target='_blank' href="https://www.linkedin.com/in/haresy" className="flex items-center gap-3">
+                    <Linkedin className="h-5 w-5 text-primary" />
+                    <span>in/HaresY</span>
+                  </a>
+                  <a target='_blank' href="https://www.instagram.com/y.haresabadi_57" className="flex items-center gap-3">
+                    <img src={InstagramSocial} alt='' className="h-5 w-5" />
+                    <span>@Haresy</span>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
           {/* Personal Information */}
           <div className="space-y-6">
