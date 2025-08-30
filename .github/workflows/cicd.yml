@@ -45,12 +45,12 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build the project
-        run: yarn build
+        run: yarn export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./out
+          path: ./dist
 
   deploy:
     environment:
