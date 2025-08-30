@@ -15,7 +15,7 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          
+
           {/* Contact Information */}
           <Card className="shadow-champion">
             <CardHeader>
@@ -32,7 +32,7 @@ const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">+989905867437</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
@@ -40,7 +40,7 @@ const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">haresabadiyounes@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <Globe className="h-5 w-5 text-primary" />
                 <div>
@@ -48,7 +48,7 @@ const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">https://haresy.ir</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
                 <div>
@@ -81,16 +81,17 @@ const ContactSection = () => {
                 <p className="text-muted-foreground">Senior Wrestling Coach</p>
                 <Badge variant="secondary" className="mt-2">Tofigh Jahanbakht Wrestling Hall</Badge>
               </div>
-              
+
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-sm text-muted-foreground">+989121084651</p>
+                    <p className="text-sm text-muted-foreground">+98 912 xxx yyyy</p>
+                    <p className="text-sm text-muted-foreground">contact me to have his number</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
                   <div>
@@ -102,7 +103,7 @@ const ContactSection = () => {
 
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground text-center italic">
-                  "Younes is one of the most dedicated and talented young wrestlers I've coached. 
+                  "Younes is one of the most dedicated and talented young wrestlers I've coached.
                   His technical skills and mental strength make him ready for international competition."
                 </p>
               </div>
@@ -128,7 +129,7 @@ const ContactSection = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <Target className="h-5 w-5 text-secondary mt-1" />
                   <div>
@@ -138,7 +139,7 @@ const ContactSection = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <User className="h-5 w-5 text-secondary mt-1" />
                   <div>
@@ -165,8 +166,8 @@ const ContactSection = () => {
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold mb-4 text-primary">Ready to Join Your Team</h3>
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                I'm seeking opportunities with professional wrestling clubs in England. 
-                With my proven championship record and dedication to excellence, 
+                I'm seeking opportunities with professional wrestling clubs in England.
+                With my proven championship record and dedication to excellence,
                 I'm ready to represent England and achieve Olympic success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
