@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "export": "vite-react-ssg build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
