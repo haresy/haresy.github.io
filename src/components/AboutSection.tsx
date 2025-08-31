@@ -58,9 +58,9 @@ const AboutSection = () => {
                     <Linkedin className="h-5 w-5 text-primary" />
                     <span>in/HaresY</span>
                   </a>
-                  <a target='_blank' href="https://www.instagram.com/y.haresabadi_57" className="flex items-center gap-3">
+                  <a target='_blank' href="https://www.instagram.com/haresy.wrestler" className="flex items-center gap-3">
                     <img src={InstagramSocial} alt='' className="h-5 w-5" />
-                    <span>@Haresy</span>
+                    <span>@HaresY.Wrestler</span>
                   </a>
                 </div>
               </CardContent>
