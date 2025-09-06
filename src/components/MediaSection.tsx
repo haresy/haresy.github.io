@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Image, FileText, Youtube, Camera } from "lucide-react";
 import { DownloadResume } from "@/components/DownloadResume.tsx";
+import firstPlace from '@/assets/first-place.jpeg';
 
 const MediaSection = () => {
   // Placeholder data for YouTube videos
@@ -10,20 +11,20 @@ const MediaSection = () => {
     {
       title: "Championship Match Highlights 2024",
       description: "Key moments from National Tournament bronze medal match",
-      thumbnail: "https://via.placeholder.com/400x225/3b82f6/ffffff?text=Wrestling+Highlights",
-      embedId: "dQw4w9WgXcQ" // Placeholder YouTube ID
+      thumbnail: firstPlace,
+      embedId: "LZWqp1tUwgM" // Placeholder YouTube ID
     },
     {
       title: "Training Session with Grandmaster Mohsen Kaveh",
       description: "Advanced techniques training at Tofigh Jahanbakht Wrestling Hall",
       thumbnail: "https://via.placeholder.com/400x225/ef4444/ffffff?text=Training+Session",
-      embedId: "dQw4w9WgXcQ" // Placeholder YouTube ID
+      embedId: "LZWqp1tUwgM" // Placeholder YouTube ID
     },
     {
       title: "Tehran City Championship 2023 - Final Match",
       description: "Gold medal winning performance in freestyle wrestling",
       thumbnail: "https://via.placeholder.com/400x225/f59e0b/ffffff?text=Championship+Final",
-      embedId: "dQw4w9WgXcQ" // Placeholder YouTube ID
+      embedId: "LZWqp1tUwgM" // Placeholder YouTube ID
     }
   ];
 
