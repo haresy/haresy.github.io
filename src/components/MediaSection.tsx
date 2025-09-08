@@ -96,10 +96,10 @@ const MediaSection = () => {
                   <img
                     src={video.thumbnail}
                     alt={video.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <Button variant="champion" size="lg">
+                    <Button variant="champion" size="lg" onClick={() => window.open(`youtu.be/${video.embedId}`)}>
                       <Play className="mr-2 h-5 w-5" />
                       Watch Now
                     </Button>
