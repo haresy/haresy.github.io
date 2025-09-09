@@ -51,6 +51,8 @@ const MediaSection = () => {
     }
   ];
 
+  const handleClickVideoEmbeddedLink = (vidId: string) => () => window.open(`https://www.youtube.com/watch?v=${vidId}`);
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -99,7 +101,7 @@ const MediaSection = () => {
                     className="w-full h-48 object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <Button variant="champion" size="lg" onClick={() => window.open(`https://youtu.be/${video.embedId}`)}>
+                    <Button variant="champion" size="lg" onClick={handleClickVideoEmbeddedLink(video.embedId)}>
                       <Play className="mr-2 h-5 w-5" />
                       Watch Now
                     </Button>
