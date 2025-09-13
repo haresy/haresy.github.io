@@ -1,13 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MediaGalleryView } from "./MediaGalleryView.tsx";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Image, FileText, Youtube, Camera } from "lucide-react";
+import { Play, Image, FileText, Youtube } from "lucide-react";
 import { DownloadResume } from "@/components/DownloadResume.tsx";
 import firstPlace from "@/assets/first-place.jpeg";
 import kaveh from '@/assets/kaveh.jpeg';
 import withMedal from "@/assets/with_medal.jpeg";
 import dihim from "@/assets/dihim.jpeg";
 import tehranTournament from "@/assets/tehran_ tournament.jpeg";
+import {cn} from "@/lib/utils";
 
 const MediaSection = () => {
   // Placeholder data for YouTube videos
@@ -51,11 +53,13 @@ const MediaSection = () => {
     {
       title: "Championship Trophy Collection",
       description: "Awards from Tehran city and provincial championships",
-      thumbnail: tehranTournament
+      thumbnail: tehranTournament,
+      center: true,
     }
   ];
 
   const handleClickVideoEmbeddedLink = (vidId: string) => () => window.open(`https://www.youtube.com/watch?v=${vidId}`);
+
 
   return (
     <section className="py-20 bg-background">
@@ -134,14 +138,15 @@ const MediaSection = () => {
                   <img
                     src={photo.thumbnail}
                     alt={photo.title}
-                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className={
+                      cn("w-full h-40",
+                         "object-cover object-top",
+                         photo.center && "object-center",
+                         "group-hover:scale-105 transition-transform duration-300",
+                      )
+                    }
                   />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button variant="outline" size="sm" className="bg-white/10 border-white/20 text-white">
-                      <Camera className="mr-2 h-4 w-4" />
-                      View
-                    </Button>
-                  </div>
+                  <MediaGalleryView photo={photo} />
                 </div>
                 <CardContent className="p-3">
                   <h4 className="font-semibold text-sm mb-1">{photo.title}</h4>
