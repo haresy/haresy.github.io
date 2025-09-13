@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Image, FileText, Youtube, Camera } from "lucide-react";
 import { DownloadResume } from "@/components/DownloadResume.tsx";
-import firstPlace from '@/assets/first-place.jpeg';
+import firstPlace from "@/assets/first-place.jpeg";
+import kaveh from '@/assets/kaveh.jpeg';
+import withMedal from "@/assets/with_medal.jpeg";
+import dihim from "@/assets/dihim.jpeg";
+import tehranTournament from "@/assets/tehran_ tournament.jpeg";
 
 const MediaSection = () => {
   // Placeholder data for YouTube videos
@@ -17,14 +21,14 @@ const MediaSection = () => {
     {
       title: "Training Session with Grandmaster Mohsen Kaveh",
       description: "Advanced techniques training at Tofigh Jahanbakht Wrestling Hall",
-      thumbnail: "https://via.placeholder.com/400x225/ef4444/ffffff?text=Training+Session",
-      embedId: "LZWqp1tUwgM" // Placeholder YouTube ID
+      thumbnail: kaveh,
+      embedId: "XGRm2gQotVk" // Placeholder YouTube ID
     },
     {
       title: "Tehran City Championship 2023 - Final Match",
       description: "Gold medal winning performance in freestyle wrestling",
-      thumbnail: "https://via.placeholder.com/400x225/f59e0b/ffffff?text=Championship+Final",
-      embedId: "LZWqp1tUwgM" // Placeholder YouTube ID
+      thumbnail: withMedal,
+      embedId: "9X-3v_Fi3z8" // Placeholder YouTube ID
     }
   ];
 
@@ -32,22 +36,22 @@ const MediaSection = () => {
     {
       title: "Medal Ceremony 2024",
       description: "Bronze medal ceremony at National Tournament",
-      thumbnail: "https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Medal+Ceremony"
+      thumbnail: withMedal
     },
     {
       title: "Training at DIHIM Club",
       description: "Early training days with Coach Morteza Afzali",
-      thumbnail: "https://via.placeholder.com/300x200/06b6d4/ffffff?text=Training+Club"
+      thumbnail: dihim
     },
     {
       title: "Team Iran Colors",
       description: "Representing Iran in national competitions",
-      thumbnail: "https://via.placeholder.com/300x200/10b981/ffffff?text=Team+Iran"
+      thumbnail: firstPlace
     },
     {
       title: "Championship Trophy Collection",
       description: "Awards from Tehran city and provincial championships",
-      thumbnail: "https://via.placeholder.com/300x200/f97316/ffffff?text=Trophy+Collection"
+      thumbnail: tehranTournament
     }
   ];
 
